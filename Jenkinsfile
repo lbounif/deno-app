@@ -1,7 +1,7 @@
 pipeline {
     agent any
-     def commit_id      //define variable commit_id
     stages{
+        def commit_id      //define variable commit_id
         stage('build') {
             steps {
                 sh "docker-compose up -d"  
